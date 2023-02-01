@@ -1,0 +1,70 @@
+.body {
+    font-family: "Helvetica", sans-serif;
+}
+.section {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
+    background-color: #f8f8f8;
+}
+
+.section-lb {
+    padding-top: 50px;
+}
+.section-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+    border: #1e90ff solid 3px;
+}
+
+.section-title p {
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.section-title h3 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 0 25px;
+    padding: 0;
+    text-transform: none;
+}
+
+button {
+    padding-bottom: 20px;
+    width: 50%;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    form > div {
+        margin-bottom: 30px;
+    }
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: left;
+    font-family: sans-serif;
+}
+form {
+    border: 1px solid #1e90ff;
+    background: #ecf5fc;
+    padding: 40px 50px 45px;
+}

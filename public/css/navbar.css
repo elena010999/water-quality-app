@@ -1,0 +1,157 @@
+.top-navbar .bg-light {
+    background: #202020 !important;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 15px 0px;
+    margin: 0px 20px;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 6px 0px;
+    position: relative;
+    display: block;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: auto;
+    top: 11px;
+    width: 7px;
+    height: 8px;
+    opacity: 0;
+    margin-left: -3px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0%;
+    bottom: auto;
+    top: -4px;
+    width: 7px;
+    height: 8px;
+    border-radius: 50px;
+    opacity: 0;
+    margin-left: -10px;
+    background-color: #ffffff;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    right: 0%;
+    left: auto;
+    bottom: auto;
+    top: -4px;
+    width: 7px;
+    height: 8px;
+    border-radius: 50px;
+    border: none !important;
+    opacity: 0;
+    margin-right: -11px;
+    background-color: #ffffff;
+    transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active::after {
+    opacity: 1;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::before {
+    opacity: 1;
+    left: 40%;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #1e90ff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::after {
+    opacity: 1;
+    right: 40%;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item:hover::after {
+    opacity: 1;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::before {
+    opacity: 1;
+    left: 40%;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #1e90ff;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::after {
+    opacity: 1;
+    right: 40%;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.top-navbar .bg-light {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar-toggler {
+    background: #ffffff;
+    border-radius: 0px;
+    padding: 10px 10px;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #333333;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navbar-toggler:hover {
+    background: #1683f1;
+}
+
+.navbar-toggler:hover .icon-bar {
+    background: #ffffff;
+}

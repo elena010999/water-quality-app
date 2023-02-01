@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer {
+    position: relative;
+    padding: 90px 0 80px !important;
+    background: #1f1f1f url("/images/world-map.png") no-repeat center;
+    font-size: 17px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.footer .footer-about,
+.footer .footer-link,
+.footer .footer-contact {
+    position: relative;
+    margin-bottom: 45px;
+    color: #dddddd;
+}
+
+.footer .footer-about h3,
+.footer .footer-link h3,
+.footer .footer-contact h3 {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1e90ff;
+}
+.footer .footer-contact a {
+    color: white;
+}
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #dddddd;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\00BB";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+li {
+    list-style: none;
+}
+.footer .footer-link a:hover {
+    color: orangered;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+}
+
+.footer-link a:hover,
+.footer a:hover {
+    color: orangered !important;
+}
+
+.footer .copyright {
+    padding: 30px 15px;
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #dddddd;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #0085ff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer .copyright p a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
