@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-     <meta http-equiv="refresh" content="30"> 
+    <meta http-equiv="refresh" content="30">
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -91,8 +91,8 @@
                                     <img src="/images/thermometer.svg" width="55" style="margin-left: 30px; margin-bottom: 15px">
                                 </span>
                                 <hr id="h-line">
-                                <div style = "color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold">@if($currentTemp < -1) Status: extremely low temperature. @elseif($currentTemp < 0) Status: very low temperature. @elseif($currentTemp> 0 && $currentTemp < 10) Status: low temperature. @elseif($currentTemp> 10 && $currentTemp < 23) Status: medium temperature. @elseif($currentTemp> 23 && $currentTemp < 35) Status: high temperature. @elseif($currentTemp> 35) Status: very high temperature.
-                                            @endif </div>
+                                <div style="color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold">@if($currentTemp < -1) Status: extremely low temperature. @elseif($currentTemp < 0) Status: very low temperature. @elseif($currentTemp> 0 && $currentTemp < 10) Status: low temperature. @elseif($currentTemp> 10 && $currentTemp < 23) Status: medium temperature. @elseif($currentTemp> 23 && $currentTemp < 35) Status: high temperature. @elseif($currentTemp> 35) Status: very high temperature.
+                                                    @endif </div>
                                 <p class="tx-12" style="font-weight:bold;font-size:20px;color:#15324f !important"><span class="tx-success"></span>
 
                                 </p>
@@ -109,14 +109,13 @@
                                     <img src="/images/turbidity.svg" width="55" style="margin-left: 30px; margin-bottom: 15px ">
                                 </span>
                                 <hr id="h-line">
-                                <div style = "color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold"> @if($currentTurb == 0) Status: extremely clean water. Allowed for drinking.
-                            @elseif($currentTurb > 0 && $currentTurb < 1) Status: extremely clean water. Allowed for drinking. @elseif($currentTurb> 1 && $currentTurb < 5) Status: clean water. Allowed for drinking but it is not recommended. @elseif($currentTurb> 5 && $currentTurb < 10) Status: dirty water. Please do not drink. @elseif($currentTurb> 10 && $currentTurb < 50) Status: very dirty. Please do not drink. @elseif($currentTurb> 50) Status: extremely dirty water. Please do not drink.
-                                            @endif </div>
+                                <div style="color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold"> @if($currentTurb > 0 && $currentTurb < 400) Status: clean water. Allowed for drinking. @elseif($currentTurb> 400 && $currentTurb < 1000) Status: dirty water. Please do not drink. @elseif($currentTurb> 1000 && $currentTurb < 3000) Status: very dirty water. Please do not drink. @elseif($currentTurb> 3000) Status: extremely dirty water. Please do not drink.
+                                                @endif </div>
                                 <p class="tx-12" style="font-weight:bold;font-size:20px;color:#15324f !important"><span class="tx-success"></span>
 
                                 </p>
                             </div>
-                        </a>
+                    </a>
                     </div>
                     <div class="col-xs-12 col-6 col-lg-3">
                         <a href="/phChart">
@@ -129,11 +128,9 @@
                                     <img src="/images/ph.svg" width="55" style="margin-left: 30px; margin-bottom: 15px ">
                                 </span>
                                 <hr id="h-line">
-                                <div style = "color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold"> @if($currentPh > 0 and $currentPh < 7) STATUS: ACIDIC. @elseif($currentPh == 7) STATUS: NEUTRAL. @elseif($currentPh > 7 and $currentPh < 14) STATUS: BASIC @endif
-                      
-                                               </div>
-                                <p class="tx-12" style="font-weight:bold;font-size:20px;color:#15324f !important"><span class="tx-success"></span> </p>
-                            </div>
+                                <div style="color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold"> @if($currentPh > 0 and $currentPh < 7) STATUS: ACIDIC. @elseif($currentPh==7) STATUS: NEUTRAL. @elseif($currentPh> 7 and $currentPh < 14) STATUS: BASIC @endif </div>
+                                            <p class="tx-12" style="font-weight:bold;font-size:20px;color:#15324f !important"><span class="tx-success"></span> </p>
+                                </div>
                         </a>
                     </div>
                     <div class="col-xs-12 col-6 col-lg-3">
@@ -146,8 +143,8 @@
                                     <img src="/images/watermeter.png" width="55" style="margin-left: 30px; margin-bottom: 15px ">
                                 </span>
                                 <hr id="h-line">
-                                <div style = "color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold">@if($currentLevel < 0 || $currentLevel == 0) Status: tank is empty. @elseif($currentLevel> 0 && $currentLevel < 5) Status: low level.UPDATE LATER @elseif($currentLevel> 5 && $currentLevel < 7) Status: medium level.UPDATE LATER @elseif($currentLevel> 7 && $currentLevel < 10) Status: high level.UPDATE LATER @elseif($currentLevel> 10 && $currentLevel < 13) Status: full level.UPDATE LATER @elseif($currentLevel> 13) Status: full level. Please empty the tank. UPDATE LATER
-                                                @endif </div>
+                                <div style="color:orangered;font-size:20px;text-transform:uppercase;font-weight:bold">@if($currentLevel < 0 || $currentLevel==0) Status: tank is empty. @elseif($currentLevel> 0 && $currentLevel < 5) Status: low level. @elseif($currentLevel> 5 && $currentLevel < 7) Status: medium level. @elseif($currentLevel> 7 && $currentLevel < 10) Status: high level.UPDATE LATER @elseif($currentLevel> 10 && $currentLevel < 13) Status: full level.UPDATE LATER @elseif($currentLevel> 13) Status: full level. Please empty the tank. UPDATE LATER
+                                                        @endif </div>
                                 <p class="tx-12" style="font-weight:bold;font-size:20px;color:#15324f !important"><span class="tx-success"></span>
 
                                 </p>
@@ -159,7 +156,7 @@
             <div class="table-responsive" style="padding-left:175px">
                 <table id="t01">
                     <div style="padding-left:150px;"></div>
-             
+
                     <tr row-span='4'>
                         <th scope="col">Date</th>
                         <th scope="col">Time</th>
@@ -167,8 +164,8 @@
                         <th scope="col">Turbidity (NTU)</th>
                         <th scope="col">pH</th>
                         <th scope="col">Water level (cm)</th>
-    
-                    </tr>@foreach($parameters as $key => $item) 
+
+                    </tr>@foreach($parameters as $key => $item)
                     <tr>
                         <td>{{ $item ['date'] }}</td>
                         <td>{{ $item ['time'] }}</td>
